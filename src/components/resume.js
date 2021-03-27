@@ -3,7 +3,6 @@ import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
-import $ from 'jquery';
 import avatar from '../static/avatar.jpg'
 
 class Resume extends Component {

@@ -25,18 +25,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa1cb4cb-0c3e-495a-bb2b-23ca233f04c1" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contact.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+>>>>>>> 5475bad0563932dd0e9598841f365561ab76699f
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FavoritesManager">
     <favorites_list name="PortfolioSite" />
   </component>
@@ -62,6 +64,8 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 5475bad0563932dd0e9598841f365561ab76699f
   <component name="FindInProjectRecents">
     <findStrings>
       <find>landing-grid</find>
@@ -99,25 +103,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/components/landingpage.js" />
-        <option value="$PROJECT_DIR$/src/components/projects.js" />
-        <option value="$PROJECT_DIR$/src/components/design.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/contact.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
   <component name="ProjectId" id="1iT1xKBPgxGgRXPUWwIKJAJ20zC" />
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -148,6 +135,8 @@
       </pane>
     </panes>
   </component>
+=======
+>>>>>>> 5475bad0563932dd0e9598841f365561ab76699f
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -159,7 +148,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="G:/job" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,18 +156,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -200,6 +177,7 @@
       <workItem from="1616670515478" duration="4761000" />
       <workItem from="1616690581285" duration="25582000" />
       <workItem from="1616758014632" duration="3395000" />
+<<<<<<< HEAD
       <workItem from="1616858723869" duration="10037000" />
     </task>
     <servers />
@@ -231,22 +209,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+=======
+      <workItem from="1616789832556" duration="1211000" />
+    </task>
+    <servers />
+  </component>
+>>>>>>> 5475bad0563932dd0e9598841f365561ab76699f
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -265,6 +242,7 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -416,5 +394,8 @@
         </state>
       </provider>
     </entry>
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+>>>>>>> 5475bad0563932dd0e9598841f365561ab76699f
   </component>
 </project>
