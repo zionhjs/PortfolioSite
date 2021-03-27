@@ -388,24 +388,8 @@
 }
 
 /* resume */
-.resume-left-col{
-  height:100%;
-  padding:30px 15px 0px 15px;
-  margin:0 !important;
-  overflow:auto;
-}
-.resume-right-col{
-  background: -webkit-linear-gradient(to bottom, #00416A, #BE5869);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom,#00416A, #BE5869); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:white;
-  padding:2em;
-  padding-right:6em;
-  height:100%;
-  margin:0 !important;
-  overflow: auto;
-  direction:ltr;
-  box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
-}
+
+
 /* arrow */
 .arrow-icon {
   height: 2.8em;
@@ -482,6 +466,24 @@
 }
 /*pc css*/
 @media only screen and (min-device-width: 1024px) {
+  .resume-left-col{
+    height:100%;
+    padding:30px 0px 0px 15px;
+    margin:0 !important;
+    overflow:auto;
+  }
+  .resume-right-col{
+    background: -webkit-linear-gradient(to bottom, #00416A, #BE5869);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#00416A, #BE5869); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    padding:2em;
+    padding-right:6em;
+    height:100%;
+    margin:0 !important;
+    overflow: auto;
+    direction:ltr;
+    box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  }
   .nav-menu .nav-card{
     width:160px;
     height:100%;
@@ -626,6 +628,28 @@
 }
 /*mobile css*/
 @media only screen and (max-device-width: 767px) {
+  .resume-left-col{
+    height:100%;
+    padding:30px 16px 0px 16px;
+    margin:0 !important;
+    overflow:auto;
+    width: 100%!important;
+  }
+  .resume-right-col{
+    background: -webkit-linear-gradient(to bottom, #00416A, #BE5869);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom,#00416A, #BE5869); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    height:100%;
+    margin:0 !important;
+    overflow: auto;
+    direction:ltr;
+    box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    padding: 0 16px;
+    width: 100%!important;
+  }
+  .form-title{
+    text-align: center;
+  }
   .category-tabs{
     padding-bottom: 80px;
   }
@@ -843,8 +867,12 @@
     width:90%!important;
   }
   .contact-dialog-container{
+    top: 20px!important;
+    height: calc(100vh - 210px);
+    margin: auto;
     width: 90vw!important;
-    padding:0 !important;
+    padding:0 0 90px 0px !important;
+    overflow: scroll;
   }
 }
 

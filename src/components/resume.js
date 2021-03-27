@@ -67,7 +67,7 @@ class Resume extends Component {
                             <span class="left-bar"></span>
                             <span class="right-bar"></span>
                         </a>
-                        <h2>Skills</h2>
+                        <h2 className={'form-title'}>Skills</h2>
                         <hr style={{ borderTop: '1.5px solid white', width: "97%" }} />
                         <h5>Languages</h5>
                         <Skills
@@ -167,7 +167,7 @@ class Resume extends Component {
                             progress={75}
                         />
 
-                        <h2>Work Experiences</h2>
+                        <h2 className={'form-title'}>Work Experiences</h2>
                         <hr style={{ borderTop: '1.5px solid white', width: "97%" }} />
                         <Experience
                             startYear={2018}
@@ -190,7 +190,7 @@ class Resume extends Component {
                             experienceDescription="Urbanus Architecture is one of China's Toptier Architecture Firm, I worked there for nearly 2 years as an architect before I came to USA to futher my education in Design."
                             link="http://www.urbanus.com.cn/"
                         />
-                        <h2>Education</h2>
+                        <h2 className={'form-title'}>Education</h2>
                         <hr style={{ borderTop: '1.5px solid white', width: "97%" }} />
                         <Education
                             startYear={2019}

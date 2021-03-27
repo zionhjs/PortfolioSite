@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent, Dialog, DialogTitle, DialogContent, DialogActions, Button, ProgressBar, Textfield } from 'react-mdl';
-import axios from 'axios';
+import { Grid, Cell, List, ListItem, ListItemContent, Dialog, DialogTitle, DialogContent, Button, ProgressBar, Textfield } from 'react-mdl';
 import dialogPolyfill from 'dialog-polyfill'
 import avatar from '../static/avatar.jpg'
 
