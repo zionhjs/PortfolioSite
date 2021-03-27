@@ -21,42 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="fa1cb4cb-0c3e-495a-bb2b-23ca233f04c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/buildspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>content-</find>
-      <find>nav-menu</find>
-      <find>landing-grid</find>
-      <find>banner-text</find>
-      <find>social-links</find>
-      <find>content-con</find>
-      <find>landing-con</find>
-      <find>Arrow</find>
-      <find>pro</find>
-      <find>projects-sec</find>
-      <find>projects-se</find>
-      <find>hover</find>
-      <find>projects-grid</find>
-      <find>hidden</find>
-      <find>mdl-tabs__tab-bar</find>
-      <find>projects-card</find>
-      <find>tab</find>
-      <find>mdl-card</find>
-      <find>mdl-tabs__tab</find>
-      <find>send</find>
-      <find>send a Message</find>
-      <find>font-family</find>
-      <find>contact-grid</find>
-      <find>contact-body</find>
-      <find>contact-dialog-container</find>
-      <find>handleOpenDialog</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,7 +73,8 @@
       <workItem from="1616670515478" duration="4761000" />
       <workItem from="1616690581285" duration="25582000" />
       <workItem from="1616758014632" duration="3395000" />
-      <workItem from="1616789832556" duration="1211000" />
+      <workItem from="1616789832556" duration="1796000" />
+      <workItem from="1616883375211" duration="755000" />
     </task>
     <servers />
   </component>
