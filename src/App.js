@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Grid } from 'react-mdl';
 import Main from './components/main';
-import { Link } from 'react-router-dom';
-import $ from 'jquery';
-import PropTypes from 'prop-types';
 
 class App extends Component {
   componentDidMount() {
