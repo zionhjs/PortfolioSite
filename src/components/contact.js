@@ -120,43 +120,43 @@ class Contact extends Component {
                             <Dialog className="contact-dialog-container" open={this.state.openDialog}>
                                 <i className="fa fa-envelope-open-o" aria-hidden="true" style={{ fontSize: '60px', marginTop: "45px" }} />
                                 <i className="fa fa-close" aria-hidden="true"
-                                    style={{ fontSize: '30px', position: "absolute", right: "9px", top: "5px", cursor: "pointer" }}
-                                    onClick={this.handleCloseDialog} />
+                                   style={{ fontSize: '30px', position: "absolute", right: "9px", top: "5px", cursor: "pointer" }}
+                                   onClick={this.handleCloseDialog} />
                                 <DialogTitle>Let's Chat!</DialogTitle>
                                 <DialogContent className="dialog-content-container">
                                     <p>Provide your basic infomation here and I'll contact you back soon!.</p>
                                     <ProgressBar indeterminate />
                                     <form className="contact-form" action="https://formspree.io/mrgkgnpv" id="contact-form" method="post" target="_blank">
                                         <Textfield className="form-textfield"
-                                            onChange={() => { }}
-                                            floatingLabel
-                                            name="name"
-                                            label="Your name here..."
-                                            style={{ width: '100%' }}
+                                                   onChange={() => { }}
+                                                   floatingLabel
+                                                   name="name"
+                                                   label="Your name here..."
+                                                   style={{ width: '100%' }}
                                         />
                                         <Textfield className="form-textfield"
-                                            onChange={() => { }}
-                                            floatingLabel
-                                            name="number"
-                                            type="number"
-                                            label="Your contact number..."
-                                            style={{ width: '100%' }}
+                                                   onChange={() => { }}
+                                                   floatingLabel
+                                                   name="number"
+                                                   type="number"
+                                                   label="Your contact number..."
+                                                   style={{ width: '100%' }}
                                         />
                                         <Textfield className="form-textfield"
-                                            onChange={() => { }}
-                                            floatingLabel
-                                            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-                                            error="Input is not a correct email!"
-                                            name="email"
-                                            label="Your email here..."
-                                            style={{ width: '100%' }}
+                                                   onChange={() => { }}
+                                                   floatingLabel
+                                                   pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                                                   error="Input is not a correct email!"
+                                                   name="email"
+                                                   label="Your email here..."
+                                                   style={{ width: '100%' }}
                                         />
                                         <Textfield className="form-textfield form-textfield-area"
-                                            onChange={() => { }}
-                                            floatingLabel
-                                            name="message"
-                                            label="Your messages here in detail..."
-                                            style={{ width: '100%' }}
+                                                   onChange={() => { }}
+                                                   floatingLabel
+                                                   name="message"
+                                                   label="Your messages here in detail..."
+                                                   style={{ width: '100%' }}
                                         />
                                         <Button className={'dialog-send-btn'} type='submit' form="contact-form" >Send</Button>
                                     </form>

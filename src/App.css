@@ -142,7 +142,14 @@
   padding:0;
   transform-style: preserve-3d;
 }
-
+.content-container{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  perspective: 0px;
+  transform-style: preserve-3d;
+  background:#181818;
+}
 .nav-icon{
   position:fixed;
   top:21px;
@@ -216,22 +223,6 @@
 .nav-menu-open{
   background:#181818;
   pointer-events: auto;
-}
-
-.nav-menu .nav-card{
-  width:160px;
-  height:100%;
-  text-align:center;
-  color:white;
-  padding-top:27px;
-  cursor: pointer;
-  background:#181818;
-  display:inline-block;
-  perspective: 100px;
-  transform-style: preserve-3d;
-  box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
-  position: relative;
-  transition: left 0.6s cubic-bezier(0.15, 0.96, 0.96, 0.96), opacity 0.75s cubic-bezier(0.9, 0.05, 0.9, 0.9), width 0.21s cubic-bezier(0.3, 0.15, 0.95, 0.15);
 }
 .nav-card-active{
   width:100vw !important;
@@ -313,15 +304,6 @@
   flex-direction:column;
   justify-content: center;
 }
-#card-a-1{
-  font-size:15px;
-  opacity: 0;
-  margin:0 auto;
-  text-decoration: none;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  /* text-orientation: upright; */
-}
 #nav-card-1 .card-a-active{
   opacity: 0.6;
 }
@@ -341,25 +323,6 @@
 .card-child-6:hover a{
   color:white;
 }
-
-/* content container*/
-.content-container{
-  position: fixed;
-  width:100%;
-  height: 100%;
-  perspective: 0px;
-  transform-style: preserve-3d;
-  background:#181818;
-}
-.landing-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin: auto 0;
-}
-
 .category-tabs .mdl-tabs__tab-bar{
   height:60px;
   /* display:flex;
@@ -425,11 +388,6 @@
 }
 
 /* resume */
-.resume-grid{
-  padding:0 !important;
-  height:100%;
-  width:100%;
-}
 .resume-left-col{
   height:100%;
   padding:30px 15px 0px 15px;
@@ -524,6 +482,45 @@
 }
 /*pc css*/
 @media only screen and (min-device-width: 1024px) {
+  .nav-menu .nav-card{
+    width:160px;
+    height:100%;
+    text-align:center;
+    color:white;
+    padding-top:27px;
+    cursor: pointer;
+    background:#181818;
+    display:inline-block;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+    transition: left 0.6s cubic-bezier(0.15, 0.96, 0.96, 0.96), opacity 0.75s cubic-bezier(0.9, 0.05, 0.9, 0.9), width 0.21s cubic-bezier(0.3, 0.15, 0.95, 0.15);
+  }
+  .category-tabs{
+
+  }
+  .resume-grid{
+    padding:0 !important;
+    height:100%;
+    width:100%;
+  }
+  .landing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+  }
+  #card-a-1{
+    font-size:15px;
+    opacity: 0;
+    margin:0 auto;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
   .projects-section{
     margin:auto;
     width:90%;
@@ -629,28 +626,51 @@
 }
 /*mobile css*/
 @media only screen and (max-device-width: 767px) {
+  .category-tabs{
+    padding-bottom: 80px;
+  }
+  .resume-grid{
+    padding:0 0 90px 0 !important;
+    width:100%;
+  }
+  .landing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: auto 0;
+    padding-bottom: 80px;
+  }
+  #card-a-1{
+    font-size:15px;
+    opacity: 0;
+    margin:0 auto;
+    text-decoration: none;
+    text-orientation: mixed;
+  }
   .nav-menu {
     flex-direction: column;
   }
   .nav-menu .nav-card{
     width:100%;
-    height:160px;
+    height:80px;
+    line-height: 80px;
     text-align:center;
     color:white;
-    padding-top:27px;
     cursor: pointer;
     background:#181818;
     display:inline-block;
     perspective: 100px;
     transform-style: preserve-3d;
-    box-shadow: -12px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -12px 15px 0px rgba(0, 0, 0, 0.75);
     position: relative;
     transition: top 0.6s cubic-bezier(0.15, 0.96, 0.96, 0.96), opacity 0.75s cubic-bezier(0.9, 0.05, 0.9, 0.9), width 0.21s cubic-bezier(0.3, 0.15, 0.95, 0.15);
   }
   .nav-menu .nav-card-1{
     color:white;
     /* left:1840px; */
-    top:1840px;
+    top: calc(100vh - 78px);
+    left: 0;
   }
   .nav-menu .nav-card-2{
     top:2140px;
@@ -807,7 +827,7 @@
     position:fixed;
     width:100%;
     top: 10px;
-    bottom: 10px;
+    bottom: 90px;
   }
   .contact-send-wrapper{
     align-self: stretch;
