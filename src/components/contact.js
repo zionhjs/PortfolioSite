@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent, Dialog, DialogTitle, DialogContent, Button, ProgressBar, Textfield } from 'react-mdl';
-import dialogPolyfill from 'dialog-polyfill'
+import { Grid, Cell, List, ListItem, ListItemContent, Button, ProgressBar, Textfield } from 'react-mdl';
+import Modal from 'react-modal';
 import avatar from '../static/avatar.jpg'
 
 class Contact extends Component {
@@ -15,10 +15,6 @@ class Contact extends Component {
 
         this.handleOpenDialog = this.handleOpenDialog.bind(this);
         this.handleCloseDialog = this.handleCloseDialog.bind(this);
-    }
-    componentDidMount() {
-        var dialog = document.querySelector('dialog');
-        dialogPolyfill.registerDialog(dialog);
     }
     submitForm(ev) {
         ev.preventDefault();
@@ -53,6 +49,15 @@ class Contact extends Component {
 
 
     render() {
+        const customStyles = {
+            content : {
+             left: 20,
+             right:20,
+             textAlign:'center',
+             margin:'auto',
+             maxWidth:450,
+            }
+        };
         return (
             <div className="contact-body">
                 <Grid className="contact-grid">
@@ -117,13 +122,13 @@ class Contact extends Component {
                         </div>
                         <div className={'contact-send-wrapper'}>
                             <Button className={'contact-send-btn'}  colored onClick={this.handleOpenDialog} raised ripple>Send A Message</Button>
-                            <Dialog className="contact-dialog-container" open={this.state.openDialog}>
+                            <Modal  style={customStyles} onRequestClose={this.handleCloseDialog} isOpen={this.state.openDialog}>
                                 <i className="fa fa-envelope-open-o" aria-hidden="true" style={{ fontSize: '60px', marginTop: "45px" }} />
                                 <i className="fa fa-close" aria-hidden="true"
                                    style={{ fontSize: '30px', position: "absolute", right: "9px", top: "5px", cursor: "pointer" }}
                                          onClick={this.handleCloseDialog} />
-                                <DialogTitle>Let's Chat!</DialogTitle>
-                                <DialogContent className="dialog-content-container">
+                                <h4 className={'dialog-title'}>Let's Chat!</h4>
+                                <div className="dialog-content-container">
                                     <p>Provide your basic infomation here and I'll contact you back soon!.</p>
                                     <ProgressBar indeterminate />
                                     <form className="contact-form" action="https://formspree.io/mrgkgnpv" id="contact-form" method="post" target="_blank">
@@ -160,8 +165,8 @@ class Contact extends Component {
                                         />
                                         <Button className={'dialog-send-btn'} type='submit' form="contact-form" >Send</Button>
                                     </form>
-                                </DialogContent>
-                            </Dialog>
+                                </div>
+                            </Modal>
                         </div>
                     </Cell>
                 </Grid>

@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import classnames from 'classnames'
 import '../App.css';
 
 class Projects extends Component {
     constructor(props) {
         super(props)
-        this.state = { activeTab: 0};
+        this.state = { activeTab: 0,current:''};
     }
-
+    setIdx=(idx)=>{
+        const {current}=this.state
+        if(current===idx){
+            this.setState({current:''})
+        }else{
+            this.setState({current:idx})
+        }
+    }
     toggleCategories() {
+        const {current}=this.state;
         if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(0)} shadow={5} className={classnames('projects-card',{['active-card']:current===0})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://i0.wp.com/instinct.is/wp-content/uploads/2017/08/woman-cart-grocery-iphone-2.jpg?resize=2000%2C900&ssl=1) center/cover' }}
                         >Clark.io Website</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -38,7 +47,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(1)} shadow={5} className={classnames('projects-card',{['active-card']:current===1})}>
                         <CardTitle style={{ color: "#bdc3c7", height: '360px', background: 'url(https://yt3.ggpht.com/a/AGF-l78E1OeuCR4yXJORN0Ojy3bjcZKzsb0jqrMsgg=s240-c-k-c0xffffffff-no-rj-mo) center/cover' }}>Galore TV App</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
                             Galore TV App - A video blog for Galore Brand.
@@ -60,7 +69,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 03 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(2)} shadow={5} className={classnames('projects-card',{['active-card']:current===2})}>
                         <CardTitle style={{ color: "#fff", height: '360px', background: 'url(https://dcassetcdn.com/design_img/2496504/580863/580863_13211572_2496504_7a53dddf_thumbnail.png) center/cover' }}>Zion's Website</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
                             My personal website which is a collection of my Full-Stack-Works/Designs/Life.
@@ -86,7 +95,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(3)} shadow={5} className={classnames('projects-card',{['active-card']:current===3})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://i.pinimg.com/originals/d3/e4/1f/d3e41fcda53faa7b6da198ad21dedc9d.jpg) center/cover' }}
                         >Calendar App</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -103,7 +112,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(4)} shadow={5} className={classnames('projects-card',{['active-card']:current===4})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://eezee.sg/blog/wp-content/uploads/2018/06/Artboard-3@3x-1024x461.png) center/330%' }}
                         >Employee Backend Management System</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -128,7 +137,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(5)} shadow={5} className={classnames('projects-card',{['active-card']:current===5})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://pbs.twimg.com/profile_images/1069715216307376128/_1uSHYr1_400x400.jpg) bottom/cover' }}
                         >Art-Galaxy Website&System</CardTitle>
                         <CardText>
@@ -150,7 +159,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(6)} shadow={5} className={classnames('projects-card',{['active-card']:current===6})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://www.qwoptechnologies.com/images/student-management.jpg) top/180%' }}
                         >Student Management System</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -172,7 +181,7 @@ class Projects extends Component {
                         </CardMenu>
                     </Card >
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(7)} shadow={5} className={classnames('projects-card',{['active-card']:current===7})}>
                         <CardTitle id="card-title" style={{ color: "#010101", height: '360px', background: 'url(https://assets.materialup.com/uploads/347c48be-3ed3-4e80-87a0-3353405f0239/0x0ss-85.jpg) top/180%' }}
                         >NBA-Visual</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -198,7 +207,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(8)} shadow={5} className={classnames('projects-card',{['active-card']:current===8})}>
                         <CardTitle id="card-title" style={{ color: "#010101", height: '360px', background: 'url(https://image.freepik.com/free-vector/job-offer-text-email-envelope-document-flat-cartoon-icon_101884-493.jpg) top/180%' }}
                         >Job Recommendation System</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -220,7 +229,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(9)} shadow={5} className={classnames('projects-card',{['active-card']:current===9})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://cdn.dribbble.com/users/13395/screenshots/6455348/screen_shot_2019-05-08_at_3.32.42_pm.png) top/180%' }}
                         >Travel Formula</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -248,7 +257,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(10)} shadow={5} className={classnames('projects-card',{['active-card']:current===10})}>
                         <CardTitle id="card-title" style={{ color: "#696969", height: '360px', background: 'url(https://www.pngitem.com/pimgs/m/506-5061206_social-media-marketing-icon-png-customers-on-social.png) top/180%' }}
                         >Circle +</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>
@@ -273,7 +282,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(11)} shadow={5} className={classnames('projects-card',{['active-card']:current===11})}>
                         <CardTitle id="card-title" style={{ color: "#696969", height: '360px', background: 'url(https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-70-512.png) top/180%' }}
                         >Tin News</CardTitle>
                         <CardText style={{ height: "120px", overflow: "auto" }}>

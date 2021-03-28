@@ -1,11 +1,35 @@
 import React, { Component } from 'react';
 import './App.css';
 import Main from './components/main';
-
+import { withRouter } from "react-router";
 class App extends Component {
   componentDidMount() {
   }
-
+  arrowClickHandler = (e) => {
+    var arrow = document.getElementById("arrow-icon");
+    arrow.classList.toggle("open");
+    e.preventDefault();
+    var right_col = document.getElementById("resume-right-col");
+    if (arrow.classList.contains("open")) {
+      right_col.scrollTo({ left: 0, top: 2000, behavior: 'smooth' });
+    }
+    else {
+      right_col.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
+    }
+  }
+  arrowClickHandlerMobile = (e) => {
+    var arrow = document.getElementById("arrow-icon-mobile");
+    arrow.classList.toggle("open");
+    e.preventDefault();
+    var right_col = document.getElementById("resume-right-col");
+    var left_col=document.getElementById('resume-left-col')
+    if (arrow.classList.contains("open")) {
+      right_col.scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+      left_col.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   navClickHandler = () => {
     var nav_line_1 = document.getElementById('nav-line-1');
     var nav_line_2 = document.getElementById('nav-line-2');
@@ -86,6 +110,7 @@ class App extends Component {
     delete props.delay;
     delete props.onDelayStart;
     delete props.onDelayEnd;
+    const {location}=props;
 
     return (
       <div className="page-content">
@@ -117,9 +142,17 @@ class App extends Component {
           <div className="nav-line" id="nav-line-2" />
           <div className="nav-line" id="nav-line-3" />
         </div>
+        {location.pathname=='/resume' ? (<a className="arrow-icon-pc" id="arrow-icon" onClick={this.arrowClickHandler}>
+          <span className="left-bar"></span>
+          <span className="right-bar"></span>
+        </a>):null}
+        {location.pathname=='/resume'?(<a className="arrow-icon-mobile" id="arrow-icon-mobile" onClick={this.arrowClickHandlerMobile}>
+          <span className="left-bar"></span>
+          <span className="right-bar"></span>
+        </a>):null}
       </div>
     )
   }
 }
 
-export default App;
+export default withRouter(App);

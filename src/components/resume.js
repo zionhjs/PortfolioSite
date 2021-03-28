@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component,Fragment } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
@@ -6,24 +6,11 @@ import Skills from './skills';
 import avatar from '../static/avatar.jpg'
 
 class Resume extends Component {
-    arrowClickHandler = (e) => {
-        var arrow = document.getElementById("arrow-icon");
-        arrow.classList.toggle("open");
-        e.preventDefault();
-        var right_col = document.getElementById("resume-right-col");
-        if (arrow.classList.contains("open")) {
-            right_col.scrollTo({ left: 0, top: 2000, behavior: 'smooth' });
-        }
-        else {
-            right_col.scrollTo({ left: 0, top: 0, behavior: 'smooth' });
-        }
-    }
-
     render() {
         return (
-            <div>
+            <>
                 <Grid className="resume-grid">
-                    <Cell col={4} style={{ color: 'grey' }} className="resume-left-col" >
+                    <Cell id={'resume-left-col'} col={4} style={{ color: 'grey' }} className="resume-left-col" >
                         <div style={{ textalign: 'center', display: "flex", flexDirection: "column", alignItems: "center" }}>
                             {/* <img
                                 src="https://www.zivarentals.com/wp-content/uploads/2017/09/avatar-1606916_960_720-1.png"
@@ -61,12 +48,8 @@ class Resume extends Component {
                         <p>www.hjscode.com</p>
                         <hr style={{ borderTop: '3px solod #833fb2', width: '100%' }} />
                     </Cell>
-                    <Cell className="resume-right-col" id="resume-right-col" col={8}
+                    <Cell  className="resume-right-col" id="resume-right-col" col={8}
                     >
-                        <a className="arrow-icon" id="arrow-icon" onClick={this.arrowClickHandler}>
-                            <span className="left-bar"></span>
-                            <span className="right-bar"></span>
-                        </a>
                         <h2 className={'form-title'}>Skills</h2>
                         <hr style={{ borderTop: '1.5px solid white', width: "97%" }} />
                         <h5>Languages</h5>
@@ -208,7 +191,7 @@ class Resume extends Component {
                         />
                     </Cell>
                 </Grid>
-            </div >
+                </>
         )
     }
 }

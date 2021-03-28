@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
+import classnames from 'classnames'
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
 import '../App.css';
 
 class Projects extends Component {
     constructor(props) {
         super(props)
-        this.state = { activeTab: 0 };
+        this.state = { activeTab: 0,current:'' };
     }
-
+setIdx=(idx)=>{
+        const {current}=this.state
+    if(current===idx){
+        this.setState({current:''})
+    }else{
+        this.setState({current:idx})
+    }
+}
     toggleCategories() {
+        const {current}=this.state;
         if (this.state.activeTab === 0) {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(0)} shadow={5} className={classnames('projects-card',{['active-card']:current===0})}>
                         <CardTitle id="card-title" style={{ color: "black", height: '360px', background: 'url(https://i.loli.net/2020/02/26/3yf96TPi8Ntuh2M.png) center/cover' }}
                         >Enchanted Diamonds</CardTitle>
                         <CardText style={{ height: '90' }}>
@@ -29,7 +38,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(1)} shadow={5} className={classnames('projects-card',{['active-card']:current===1})}>
                         <CardTitle id="card-title" style={{ color: "black", height: '360px', background: 'url(https://i.pinimg.com/originals/08/20/a3/0820a3bb9a23939f20dc58972c8f9a92.jpg) bottom/cover' }}
                         >Baby Phat</CardTitle>
                         <CardText style={{ height: '90', overflow: "auto" }}>
@@ -45,7 +54,7 @@ class Projects extends Component {
                     </Card >
 
                     {/* Project 03 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(2)} shadow={5} className={classnames('projects-card',{['active-card']:current===2})}>
                         <CardTitle id="card-title" style={{ color: "black", height: '360px', background: 'url(https://i.loli.net/2020/02/26/r4XHeUu6TCzMGoq.png) center/cover' }}
                         >Dwell CBD</CardTitle>
                         <CardText style={{ height: '90' }}>
@@ -66,7 +75,7 @@ class Projects extends Component {
             return (
                 <div className="projects-grid">
                     {/* Project 01 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(3)} shadow={5} className={classnames('projects-card',{['active-card']:current===3})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://i.loli.net/2020/02/29/1tGKuIekbcPCXm9.png) center/cover' }}
                         >Architecture Design Portfolio</CardTitle>
                         <CardText style={{ height: '90' }}>
@@ -81,7 +90,7 @@ class Projects extends Component {
                         </CardMenu>
                     </Card >
                     {/* Project 02 */}
-                    <Card shadow={5} className={'projects-card'}>
+                    <Card onClick={()=>this.setIdx(4)} shadow={5} className={classnames('projects-card',{['active-card']:current===4})}>
                         <CardTitle id="card-title" style={{ color: "#fff", height: '360px', background: 'url(https://i.loli.net/2020/02/29/XstqIzyQRnwve2l.jpg) center/cover' }}
                         >Video Content Designs</CardTitle>
                         <CardText style={{ height: '90' }}>
