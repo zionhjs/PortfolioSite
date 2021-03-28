@@ -41,14 +41,14 @@ class Resume extends Component {
                         </div>
                         <h4 style={{ color: 'white' }}>Software Engineer</h4>
                         <hr style={{ borderTop: '1px solid #bdc3c7', width: '100%' }} />
-                        <p>
+                        <div>
                             <p>More creatively than an engineer, more practically than a designer. In the core I'm a creator, discovering and merging meaningful products to change our life.</p>
                             <p>
                                 Good products combines with Design and Engineering, which bring excellent experience - that's all what I'm pursuing and creating.
                                 During my years of engineering experiences, I worked on different layers of the Web Developement from UI/UX, Frontend to Backend.
                             </p>
 
-                        </p>
+                        </div>
                         <hr style={{ borderTop: '1px solid #bdc3c7', width: '100%' }} />
                         <h5 style={{ color: 'white' }}>Address</h5>
                         <p>Address_1: 321 W 3th St #F, Downtown Los Angeles, CA 90013</p>
@@ -63,9 +63,9 @@ class Resume extends Component {
                     </Cell>
                     <Cell className="resume-right-col" id="resume-right-col" col={8}
                     >
-                        <a class="arrow-icon" id="arrow-icon" onClick={this.arrowClickHandler}>
-                            <span class="left-bar"></span>
-                            <span class="right-bar"></span>
+                        <a className="arrow-icon" id="arrow-icon" onClick={this.arrowClickHandler}>
+                            <span className="left-bar"></span>
+                            <span className="right-bar"></span>
                         </a>
                         <h2 className={'form-title'}>Skills</h2>
                         <hr style={{ borderTop: '1.5px solid white', width: "97%" }} />

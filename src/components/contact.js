@@ -8,7 +8,8 @@ class Contact extends Component {
         super(props);
 
         this.state = {
-            status: ""
+            status: "",
+            openDialog:false,
         };
         this.submitForm = this.submitForm.bind(this);
 
@@ -67,7 +68,7 @@ class Contact extends Component {
                             style={{ height: '240px' }} className="avatar-img"
                         />
                         <h2>Jian Sen</h2>
-                        <p style={{
+                        <div style={{
                             width: '90%', paddingTop: '0.5em', fontSize: '15px',
                             fontFamily: 'DistrictDemi'
                         }}>
@@ -77,7 +78,7 @@ class Contact extends Component {
                                 I help to combine experiences together and coordinates the team work together smoothly.
                             </p>
                             <p>Contact me if you wanna hire a experienced SDE or you wanna me to develop your next Application!</p>
-                        </p>
+                        </div>
                     </Cell>
                     <Cell col={6}>
                         <h2>Contact Me</h2>
@@ -120,7 +121,7 @@ class Contact extends Component {
                                 <i className="fa fa-envelope-open-o" aria-hidden="true" style={{ fontSize: '60px', marginTop: "45px" }} />
                                 <i className="fa fa-close" aria-hidden="true"
                                    style={{ fontSize: '30px', position: "absolute", right: "9px", top: "5px", cursor: "pointer" }}
-                                   onClick={this.handleCloseDialog} />
+                                         onClick={this.handleCloseDialog} />
                                 <DialogTitle>Let's Chat!</DialogTitle>
                                 <DialogContent className="dialog-content-container">
                                     <p>Provide your basic infomation here and I'll contact you back soon!.</p>

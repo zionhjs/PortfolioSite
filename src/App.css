@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+  display: none;
+}
 .App {
   text-align: center;
 }
@@ -465,7 +468,7 @@
   transform: rotate(70deg);
 }
 /*pc css*/
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   .resume-left-col{
     height:100%;
     padding:30px 0px 0px 15px;
@@ -621,13 +624,13 @@
   }
 }
 /*ipad css*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 .hidden-pc-ipad{
   display: none!important;
 }
 }
 /*mobile css*/
-@media only screen and (max-device-width: 767px) {
+@media only screen and (max-width: 767px) {
   .resume-left-col{
     height:100%;
     padding:30px 16px 0px 16px;
@@ -866,15 +869,14 @@
     width:90%!important;
   }
   .contact-dialog-container{
-    top: 20px!important;
-    height: calc(100vh - 210px);
+    top: 83%!important;
     margin: auto;
     width: 90vw!important;
     padding:0 0 90px 0px !important;
     overflow: scroll;
   }
 }
-@media only screen and (max-device-width: 414px){
+@media only screen and (max-width: 414px){
 .contact-list-item{
   font-size: 16px;
 }
