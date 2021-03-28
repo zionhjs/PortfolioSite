@@ -846,12 +846,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0;
+    padding: 10px 0px 90px 0px;
     margin: auto;
-    position:fixed;
     width:100%;
-    top: 10px;
-    bottom: 90px;
   }
   .contact-send-wrapper{
     align-self: stretch;
@@ -862,6 +859,8 @@
   .contact-list-item{
     font-size: 18px;
     font-family: 'Anton';
+    display: flex;
+    justify-content: space-between;
   }
   .dashed-line{
     width:90%!important;
@@ -874,6 +873,11 @@
     padding:0 0 90px 0px !important;
     overflow: scroll;
   }
+}
+@media only screen and (max-device-width: 414px){
+.contact-list-item{
+  font-size: 16px;
+}
 }
 
 
