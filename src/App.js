@@ -117,6 +117,7 @@ class App extends Component {
         <div className="content-container">
           <Main></Main>
         </div >
+        <div className={'nav-bar'}></div>
         <div className="nav-menu" id="nav-menu">
           <div className="nav-card nav-card-1" id="nav-card-1" onClick={this.cardClickHandler_1}>
             <a id="card-a-1">JIANSEN©</a>

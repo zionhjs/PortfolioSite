@@ -121,7 +121,7 @@ class Contact extends Component {
                             </List>
                         </div>
                         <div className={'contact-send-wrapper'}>
-                            <Button className={'contact-send-btn'}  colored onClick={this.handleOpenDialog} raised ripple>Send A Message</Button>
+                            <Button className={'contact-send-btn'} onTouch={this.handleOpenDialog} colored onClick={this.handleOpenDialog} raised ripple>Send A Message</Button>
                             <Modal  style={customStyles} onRequestClose={this.handleCloseDialog} isOpen={this.state.openDialog}>
                                 <i className="fa fa-envelope-open-o" aria-hidden="true" style={{ fontSize: '60px', marginTop: "45px" }} />
                                 <i className="fa fa-close" aria-hidden="true"

@@ -646,6 +646,13 @@
 }
 /*mobile css*/
 @media only screen and (max-width: 767px) {
+  .nav-bar{
+    position: fixed;
+    width: 100vw;
+    height: 78px;
+    bottom: 0;
+    background-color: #181818;
+  }
   .video-container{
     width: 100%;
     height: calc(100vh - 78px);
